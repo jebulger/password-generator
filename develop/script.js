@@ -1,39 +1,29 @@
 // Assignment code here
-// Creates a prompt asking user if they would like to include spoecial characters and upper case letters
+// Defining the characters that can be used for the generator
 var characters = ["0123456789qwertyuiopasdfghjklzxcvbnm"];
 var upperCase = ["QWERTYUIOPASDFGHJKLZXCVBNM"];
 var charactersSpecial = ["@#$%^&*();<>"];
 
-var specialChoice = confirm("Would you like to include special characters in the password generator?");
-  if (specialChoice) {
-    var parameterOne = characters + charactersSpecial;
-  } else {
-    var parameterOne = characters;
+// Generates prompts for user input on the password generator's parameters
+function generatePassword() {
+  var passwordLength = parseInt(prompt("Enter a numeric value for the password character length (Must be at least 8 and no more than 128)"));
+  if (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) {
+    alert("Password must be at least 8 characters long and not more than 128");
+    return "Password length must be entered as a number and between 8 and 128"
   }
-var caseChoice = confirm("Would you like to include upper case letters as well?")
-  if (caseChoice) {
-    var parameters = parameterOne + upperCase;
-  } else {
-    var parameters = parameterOne;
-  }
-
-var passwordLength = prompt("Enter a numeric value for the password character length (Must be at least 8 and no more than 128)");
-if (passwordLength != Number) {
-  alert("Password length must be entered as a number");
-  prompt("Try again");
-} else if (passwordLength < 8) {
-  alert("Password must be at least 8 characters long");
-  prompt("Try again");
-} else if (passwordLength > 128) {
-  alert("Password cannot be longer than 128 characters");
-  prompt("Try again");
-} else {
-  passwordLength = Number;
+  // var specialChoice = confirm("Would you like to include special characters in the password generator?");
+  //   if (specialChoice) {
+  //   var parameterOne = characters.concat(charactersSpecial);
+  //   } else {
+  //   var parameterOne = characters;
+  //   }
+  // var caseChoice = confirm("Would you like to include upper case letters as well?");
+  //   if (caseChoice) {
+  //   var parameters = parameterOne.concat(upperCase);
+  //   } else {
+  //   var parameters = parameterOne;
+  //   }
 }
-
-// function generatePassword() {
-
-// }
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
