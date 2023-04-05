@@ -19,7 +19,7 @@ Click the button here to begin:
 ### ![](./develop/assets/03-hw-button.png)
 
 Then some prompts will open up asking if you would like to include certain characters. Press <strong>ok</strong> to include, <strong>cancel</strong> to decline:
-![](./develop/assets/03-hw-prompts.png)
+### ![](./develop/assets/03-hw-prompts.png)
 
 When it asks how long you would like the password to be, you must enter a numeric value and the number must be at least 8, but no greater than 128. This will dictate how many characters the randomly generated password will have.
 - Entering something like: "twenty" is not going to work. You have to enter that as 20.
