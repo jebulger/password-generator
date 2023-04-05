@@ -13,7 +13,7 @@ All that is required is a device with access to a web browser.
 
 ## Usage
 Opening up the application will bring you to this page:
-![](./develop/assets/03-hw-usage.png)
+### ![](./develop/assets/03-hw-usage.png)
 
 Click the button here to begin:
 ### ![](./develop/assets/03-hw-button.png)
@@ -25,11 +25,11 @@ When it asks how long you would like the password to be, you must enter a numeri
 - Entering something like: "twenty" is not going to work. You have to enter that as 20.
 
 Upon entering a value, the application will then generate the random password, and place it on the page here:
-![](./develop/assets/03-hw-random-password.png)
+### ![](./develop/assets/03-hw-random-password.png)
 
 From there, you can select the password and copy it.
 
 ## Deployed Application
 **Live URL here: [_https://jebulger.github.io/password-generator/_](https://jebulger.github.io/password-generator/)**
 
-![](./develop/assets/03-hw-full-size-screenshot.png)
+### ![](./develop/assets/03-hw-full-size-screenshot.png)
